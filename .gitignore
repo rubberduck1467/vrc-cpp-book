@@ -4,7 +4,7 @@
 *.o
 
 *.aux
-assignment-*.pdf
+main.pdf
 *.ps 
 *.log
 *.dvi
