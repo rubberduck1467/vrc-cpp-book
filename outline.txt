@@ -1,7 +1,9 @@
 * Introduction
 ** Motivation
 ** Overview
+** Prerequisites
 
+// LEAVE OUT 
 * A Review of C++
 
 ** Variables
@@ -33,6 +35,7 @@
 *** Getters and Setters
 *** Inheritance
 *** Polymorphism
+// LEAVE OUT
 
 * Eviroment and Tools for Robotics
 ** PROS-API
