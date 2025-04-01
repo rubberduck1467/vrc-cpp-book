@@ -1,0 +1,87 @@
+* Introduction
+** Motivation
+** Overview
+
+* A Review of C++
+
+** Variables
+*** Data types
+*** Scope
+*** Constants
+
+** Functions
+*** Parameters
+*** Return Values
+
+** Conditionals and Loops
+*** if
+*** switch
+*** for and while
+
+** The Preprocessor
+*** Include
+**** stdlib
+
+** Headers and Namespaces
+*** Guards
+*** 
+
+** Objects and Classes
+*** Member functions and variables
+**** The this pointer
+*** Public and Private
+*** Getters and Setters
+*** Inheritance
+*** Polymorphism
+
+* Eviroment and Tools for Robotics
+** PROS-API
+*** Setup
+**** Linux
+**** Windows
+**** macOS
+*** Introduction to the API
+*** Why not VEXCode?
+** Git
+
+
+* The PROS-API
+** Motors
+*** Motor Groups
+** Three-wire Ports
+*** Types of IO
+*** Pneumatics
+** Sensors
+*** Three Wire sensors
+** The LCD
+** Delays and Multitasking
+*** Mutexes
+
+* Structuring the code
+
+** Namespaces and Objects
+*** Subsystem Management
+
+** Configuration files
+
+* Driver Control
+** Toggles and Latches
+** Control Layouts
+** Scaling Curves
+** Macros
+
+* Autonomous Control
+** Autonomous Selectors
+** Sensors
+*** Inerital
+*** Rotation
+*** Distance
+** PID
+** Odometrey
+
+* Other Topics
+** Information Display
+** Libraries
+** Programming in the Interview
+** Further Reading
+

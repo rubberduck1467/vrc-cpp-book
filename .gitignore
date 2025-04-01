@@ -1,0 +1,11 @@
+.vscode
+*.swp
+*.swo
+*.o
+
+*.aux
+assignment-*.pdf
+*.ps 
+*.log
+*.dvi
+*.tex~
