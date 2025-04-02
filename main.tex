@@ -1,8 +1,11 @@
-\documentclass[a4paper,12pt]{book}
+\documentclass[portrait, 12pt]{book}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage{subfiles}
 \geometry{margin=1in}
+\geometry{a3paper}
+\usepackage{setspace}
+\doublespacing
 
 \newcommand{\rulesep}{\unskip\ \vrule\ }
 
@@ -14,6 +17,9 @@
 
 \maketitle
 
+\frontmatter
+\tableofcontents
+\mainmatter
 \subfile{intro.tex}
-\subfile{cpp-review.tex}
+\subfile{enviroment.tex}
 \end{document}
