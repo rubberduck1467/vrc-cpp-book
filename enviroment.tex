@@ -59,4 +59,36 @@ There is no PROS plugin or GitLens for Vim, so these are all the needed plugins.
 
 For more information on Vim, see the website at \url{https://www.vim.org/}.
 
+\section{Introduction to PROS API}
+To interface with the VEX Brain, we will use the Purdue PROS API.
+PROS is a high performance C/C++ API from Purdue university that is accessed through the command line.
+Although the VSCode extension exists, and you may have installed it,
+    all instructions related to the API will be given as command line commands.
+
+\subsection{Setup}
+First we will install a cross compiler to build for the Vex Brain.
+After that we ill install the PROS toolchain using the Python package manager \verb|pip3|.
+Finally we will test our environment to ensure the the API is working correctly.
+The instructions provided should work for Windows, Linux, and macOS; with minor differences between them.
+If you use WSL, there is an extra step to allow uploads to the robot brain.
+
+For more information see the \href{PROS Website}{https://pros.cs.purdue.edu/v5/getting-started/}.
+We will be following the Linux instructions found here: \url{https://pros.cs.purdue.edu/v5/getting-started/linux.html},
+    they are similar but not exactly the same for Windows and macOS.
+
+\subsubsection{Installing the Crosscompiler}
+Since the Brain runs a different OS and the processor has a difficult architecture,
+    we require a compiler that will build for the ARM architecture.
+For this purpose, we will use the ARM GNU Toolchain which can be downloaded \href{here}{https://developer.arm.com/downloads/-/gnu-rm}.
+You need to decompress the file, and add the \verb|bin| directory to your system PATH.
+(These are called environment variables on Windows).
+On macOS and Linux, you can add export \verb|PATH=$PATH:/path-of-toolchain/bin| to your \verb|.bashrc|\footnote{or the equivalent of your shell}
+    (replace \verb|path-to-toolchain| with the path of the decompressed directory)
+Then run \verb|source ~/.bashrc| or open a new shell to load changes.
+
+To check if the installation was successful, run \verb|arm-none-eabi-gcc --version| from outside the toolchain's \verb|bin| directory.
+If it prints out the and copyright information: Success! 
+If it signals a command not found error, check that the path has been configured properly
+    and that the changes have been loaded.
+
 \end{document}
