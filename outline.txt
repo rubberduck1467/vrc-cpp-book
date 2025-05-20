@@ -38,6 +38,9 @@
 // LEAVE OUT
 
 * Eviroment and Tools for Robotics
+** Editors
+*** VSCode
+*** Vim
 ** PROS-API
 *** Setup
 **** Linux

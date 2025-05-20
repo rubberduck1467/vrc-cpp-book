@@ -3,6 +3,60 @@
 
 \chapter{Tools and Environment}
 
-wordy words
+Before we can program a Robot, we need to set up our programming environment.
+There are three aspects of the environment that need to be set up before we can begin: the Compiler, the Pros API, and Git version control.
+We also will set up our editor to mostly provide autocomplete and error checking,
+    however most error checkers flag the API header, so that is of limited utilty.
+I suggest using VSCode (VSCodium is a Free and Open Source (FOSS, \href{https://www.gnu.org/philosophy/free-sw.html}{See GNU.org for more info}) version) or Vim.
+VSCode is much easier to use and set up but Vim is often faster and more performant for writing code.
+If you are new to programming, I suggest sticking with VSCode, but if you are already experienced configuring Vim is a fun experience.
+Either way, instructions are included to set both up.
+
+\section{Configuring the Editor}
+\subsection {VSCode (Recommended for New Programmers)}
+
+VSCode is a free and mostly open source editor from Microsoft,
+    that usually requires limited configuration and has an intuitive extension system.
+VSCodium is almost exactly the same but does not include proprietary content, and is fully FOSS.
+Download links for VSCode on major systems can be found at \url{https://code.visualstudio.com/download}.
+After following the installation instructions, we need to install a few packages.
+The first package that should be installed is the Microsoft C/C++ extension.
+This will provide basic autocomplete and error checking.
+We should install GitLens as it is a handy extension for version control.
+Git can also be accessed from the command line, which is my preferred method, but GitLens is usually more intuitive.
+We can optionally install the PROS extension. 
+It can be handy but it often causes a big performance hit.
+All instructions in this book are given as command line instructions, so this extension is not required nor is it recommended;
+    only install this extension if you want.
+
+To use VSCode with your project, open the root folder of your project.
+This can be done using \verb|Crtl+K Crtl+O| or \verb|code <directory>| from the command line.
+In VSCode, all the files can be found in the explorer and opened for editing.
+Also, VSCode has a built in terminal that can be accessed with \verb|Crtl+`| (the key below escape).
+This terminal is the primary way we will interact with the PROS API.
+
+For more information on VSCode, there are numerous videos on the internet that concern more advanced usage.
+I recommended \href{Fireship}{https://www.youtube.com/watch?v=ifTF3ags0XI} to get a good handle on shortcuts for faster editing.
+
+\subsection{Vim (Not Recommended for the Inexperienced)}
+Vim is a powerful command line based editor, known for it's odd but very efficient keyboard shortcuts.
+Vim can be easily installed through any Linux package manager.
+Download links for Windows and Mac can be found at \url{https://www.vim.org/download.php}.
+Before continuing, run the command \verb|vimtutor| and work through the exercises.
+This will introduce you to the most important movements for Vim allow efficient use of the editor.
+(From this point on, all Vim related instructions are intended for Linux, other operating systems may or may not work.)
+If you still wish to continue with Vim, you should set up a \verb|.vimrc| in your home directory 
+    a good resource can be found on \href{Free Code Camp}{https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/}.
+
+You will also want to set up \href{vimplug}{https://github.com/junegunn/vim-plug} and \href{Vundle}{https://github.com/VundleVim/Vundle.vim}
+We will use vimplug to install \href{Asynchronous Lint Engine (ALE)}{https://github.com/dense-analysis/ale},
+    and we will use Vundle to install \href{YouCompleteMe (YCM)}{https://github.com/ycm-core/YouCompleteMe}.
+The current Github Readme for YCM says that Vundle is currently broken.
+This seems to be outdated as I was able to install it using Vundle.
+Following the existing instructions should work but can be difficult and may take a few hours to install correctly.
+
+There is no PROS plugin or GitLens for Vim, so these are all the needed plugins.
+
+For more information on Vim, see the website at \url{https://www.vim.org/}.
 
 \end{document}

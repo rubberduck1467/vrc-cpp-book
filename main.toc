@@ -1,2 +1,5 @@
-\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
-\contentsline {chapter}{\numberline {2}Tools and Environment}{3}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Tools and Environment}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Configuring the Editor}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}VSCode (Recommended for New Programmers)}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Vim (Not Recommended for the Inexperienced)}{3}{subsection.2.1.2}%
